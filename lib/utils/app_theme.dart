@@ -9,6 +9,14 @@ class AppTheme {
     return ThemeData(
       colorScheme: scheme,
       useMaterial3: true,
+      fontFamily: 'Raleway',
+      textTheme: ThemeData.light().textTheme.copyWith(
+            // custom textTheme
+            titleMedium: const TextStyle(
+              fontSize: 20,
+              fontFamily: 'RobotoCondensed',
+            ),
+          ),
     );
   }
 
@@ -21,6 +29,15 @@ class AppTheme {
     return ThemeData(
       colorScheme: scheme,
       useMaterial3: true,
+      fontFamily: 'Raleway',
+      textTheme: ThemeData.dark().textTheme.copyWith(
+            // custom textTheme
+            titleMedium: const TextStyle(
+              fontSize: 20,
+              fontFamily: 'RobotoCondensed',
+              fontWeight: FontWeight.bold,
+            ),
+          ),
     );
   }
 }

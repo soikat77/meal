@@ -18,6 +18,7 @@ class CategoryPage extends StatelessWidget {
       children: dummyCategories
           .map(
             (categoryData) => CategoryItem(
+              id: categoryData.id,
               title: categoryData.title,
               color: categoryData.color,
             ),

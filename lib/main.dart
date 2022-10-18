@@ -1,5 +1,5 @@
-import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter/material.dart';
+import 'package:dynamic_color/dynamic_color.dart';
 
 import 'package:meal/pages/homepage.dart';
 import 'package:meal/utils/app_theme.dart';
@@ -11,7 +11,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return DynamicColorBuilder(
@@ -20,6 +19,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           theme: AppTheme.llightTheme(lightDynamic),
           darkTheme: AppTheme.darkTheme(darkDynamic),
+          // Home/ROOT
           home: const HomePage(),
         );
       }),
