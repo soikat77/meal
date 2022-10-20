@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:dynamic_color/dynamic_color.dart';
 
 import 'package:meal/pages/homepage.dart';
+import 'package:meal/pages/meal_screen.dart';
 import 'package:meal/utils/app_theme.dart';
 
 void main() {
@@ -21,6 +22,9 @@ class MyApp extends StatelessWidget {
           darkTheme: AppTheme.darkTheme(darkDynamic),
           // Home/ROOT
           home: const HomePage(),
+          routes: {
+            MealScreen.routName: (context) => MealScreen(),
+          },
         );
       }),
     );
