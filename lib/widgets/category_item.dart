@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meal/pages/meal_screen.dart';
+import 'package:meal/pages/meal_items_screen.dart';
 
 class CategoryItem extends StatelessWidget {
   final String id;
